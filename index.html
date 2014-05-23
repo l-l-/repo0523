@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>random website dot com</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		linkb = newImage("images/linkb.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<script type=text/javascript>
+var win= null;
+function NewWindow(mypage,myname,w,h,scroll){
+  var winl = (screen.width-w)/2;
+  var wint = (screen.height-h)/2;
+  var settings  ='height='+h+',';
+      settings +='width='+w+',';
+      settings +='top='+wint+',';
+      settings +='left='+winl+',';
+      settings +='scrollbars='+scroll+',';
+      settings +='resizable=yes';
+  win=window.open(mypage,myname,settings);
+  if(parseInt(navigator.appVersion) >= 4){win.window.focus();}
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" ONLOAD="preloadImages();">
+<table width="100%" border="0">
+  <tr> 
+    <td align="center"><img src="images/official.gif" width="761" height="110"><br><br>
+      <a href="cgi-bin/random.pl" target="_blank"><img src="images/head.jpg" width="293" height="253" border="0"></a>
+      <p>How often do you find yourself on the internet looking at the same boring pages?<br>
+      You know there is something out there but you don't know where to look<br>
+      </p>
+      <p>Trust me, how bad could it be?</p>
+     <p><a href="cgi-bin/random.pl" target="_blank" ONMOUSEOVER="changeImages('link', 'images/linkb.gif'); return true;"
+	ONMOUSEOUT="changeImages('link', 'images/link.gif'); return true;">
+	<IMG NAME="link" SRC="images/link.gif" WIDTH=234 HEIGHT=45 BORDER=0></A><br>
+      Click above for a new random website<br>
+      Links will open in a new window</p>
+<p><b>Disclaimer</b>: The websites you are forwarded to may contain naughty stuff.<br>
+There is no known "porn" but sites change hands often and sometimes they change ethical direction.<br>
+If you see something that looks like porn or is otherwise unacceptable let us know and we'll decide<br> 
+if it should be removed or if you're just a crank who likes to complain.
+</p>
+<p>Don't leave the house with your fly open. Make sure you've got up-to-date virus protection.</p>
+      <p><a href="colo.html" onclick="NewWindow(this.href,'name','500','600','yes');return false">Colophon 
+        &amp; Warning &amp; Contact</a></p>
+      <p>Want to add your own links? After reading the <a href="colo.html" onclick="NewWindow(this.href,'name','500','600','yes');return false">warning</a> type the url in the box below <form method="post" action="cgi-bin/new.pl"><input type="text" name="url"> <input type="submit" value="add"></form></p>
+<p>If you see something that shouldn't be here <a href="mailto:random@randomwebsite.com">let us know</a></p>
+      <p>random website dot com 2001-2011</p>
+      <p>"I'd like to quit thinking of the present, like right now,<br>
+         as some minor insignificant preamble to something else."
+      </p>
+      </td>
+  </tr>
+  <tr>
+   <td align="center">
+   </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8175092-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
